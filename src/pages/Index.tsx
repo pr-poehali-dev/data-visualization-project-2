@@ -33,17 +33,17 @@ const Index = () => {
               <Monitor className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-lg sm:text-xl font-bold text-white">Дискордик</h1>
-              <p className="text-xs text-[#b9bbbe] hidden sm:block">Rich Presence для Figma в Discord</p>
+              <h1 className="text-lg sm:text-xl font-bold text-white">TeamChat</h1>
+              <p className="text-xs text-[#b9bbbe] hidden sm:block">Корпоративный мессенджер для вашего бизнеса</p>
             </div>
           </div>
           <div className="hidden sm:flex items-center gap-4">
             <Button variant="ghost" className="text-[#b9bbbe] hover:text-white hover:bg-[#40444b]">
               <Github className="w-4 h-4 mr-2" />
-              GitHub
+              Документация
             </Button>
             <Button className="bg-[#5865f2] hover:bg-[#4752c4] text-white px-6 py-2 rounded text-sm font-medium">
-              Скачать
+              Начать работу
             </Button>
           </div>
           <Button
@@ -61,10 +61,10 @@ const Index = () => {
             <div className="flex flex-col gap-3">
               <Button variant="ghost" className="text-[#b9bbbe] hover:text-white hover:bg-[#40444b] justify-start">
                 <Github className="w-4 h-4 mr-2" />
-                GitHub
+                Документация
               </Button>
               <Button className="bg-[#5865f2] hover:bg-[#4752c4] text-white px-6 py-2 rounded text-sm font-medium">
-                Скачать
+                Начать работу
               </Button>
             </div>
           </div>
@@ -96,7 +96,7 @@ const Index = () => {
             className={`${mobileSidebarOpen ? "block" : "hidden"} lg:block w-full lg:w-60 bg-[#2f3136] flex flex-col`}
           >
             <div className="p-4 border-b border-[#202225] flex items-center justify-between">
-              <h2 className="text-white font-semibold text-base">Сервер Дискордик</h2>
+              <h2 className="text-white font-semibold text-base">Рабочее пространство</h2>
               <Button
                 variant="ghost"
                 className="lg:hidden text-[#b9bbbe] hover:text-white hover:bg-[#40444b] p-1"
@@ -112,7 +112,7 @@ const Index = () => {
                   <span>Текстовые каналы</span>
                 </div>
                 <div className="mt-1 space-y-0.5">
-                  {["общий", "новости", "витрина", "помощь"].map((channel) => (
+                  {["общий", "новости", "проекты", "поддержка"].map((channel) => (
                     <div
                       key={channel}
                       className="flex items-center gap-1.5 px-2 py-1 rounded text-[#8e9297] hover:text-[#dcddde] hover:bg-[#393c43] cursor-pointer"
@@ -129,7 +129,7 @@ const Index = () => {
                   <span>Голосовые каналы</span>
                 </div>
                 <div className="mt-1 space-y-0.5">
-                  {["Общий", "Обзор дизайна"].map((channel) => (
+                  {["Общий", "Планерки"].map((channel) => (
                     <div
                       key={channel}
                       className="flex items-center gap-1.5 px-2 py-1 rounded text-[#8e9297] hover:text-[#dcddde] hover:bg-[#393c43] cursor-pointer"
@@ -173,9 +173,9 @@ const Index = () => {
                 <Menu className="w-5 h-5" />
               </Button>
               <Hash className="w-5 h-5 text-[#8e9297]" />
-              <span className="text-white font-semibold">витрина</span>
+              <span className="text-white font-semibold">проекты</span>
               <div className="w-px h-6 bg-[#40444b] mx-2 hidden sm:block"></div>
-              <span className="text-[#8e9297] text-sm hidden sm:block">Показывай свою работу в Figma с Дискордик</span>
+              <span className="text-[#8e9297] text-sm hidden sm:block">Обсуждайте проекты в реальном времени</span>
               <div className="ml-auto flex items-center gap-2 sm:gap-4">
                 <Bell className="w-4 h-4 sm:w-5 sm:h-5 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]" />
                 <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]" />
@@ -192,22 +192,22 @@ const Index = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-white font-medium text-sm sm:text-base">Дискордик Бот</span>
+                    <span className="text-white font-medium text-sm sm:text-base">TeamChat Бот</span>
                     <span className="bg-[#5865f2] text-white text-xs px-1 rounded">БОТ</span>
                     <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 12:00</span>
                   </div>
                   <div className="text-[#dcddde] text-sm sm:text-base">
                     <p className="mb-3 sm:mb-4">
-                      <strong>Добро пожаловать в Дискордик!</strong> Показывай свой прогресс в Figma прямо в Discord.
+                      <strong>Добро пожаловать в TeamChat!</strong> Корпоративный мессенджер для эффективной работы команды.
                     </p>
                     <div className="bg-[#2f3136] border-l-4 border-[#5865f2] p-3 sm:p-4 rounded">
-                      <h3 className="text-white font-semibold mb-2 text-sm sm:text-base">Что умеет Дискордик:</h3>
+                      <h3 className="text-white font-semibold mb-2 text-sm sm:text-base">Возможности TeamChat:</h3>
                       <ul className="space-y-1 text-xs sm:text-sm text-[#b9bbbe]">
-                        <li>Автоматически определяет Figma в браузере и приложении</li>
-                        <li>Показывает название текущего проекта/файла</li>
-                        <li>Обновляется каждые 5 секунд в реальном времени</li>
-                        <li>Очищает статус при простое</li>
-                        <li>Работает на всех платформах</li>
+                        <li>Мгновенный обмен сообщениями между сотрудниками</li>
+                        <li>Видео и аудио звонки в HD качестве</li>
+                        <li>Безопасная передача файлов любого размера</li>
+                        <li>Интеграция с корпоративными системами</li>
+                        <li>Работает на всех платформах и устройствах</li>
                       </ul>
                     </div>
                   </div>
@@ -225,7 +225,7 @@ const Index = () => {
                     <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 12:05</span>
                   </div>
                   <div className="text-[#dcddde] mb-3 text-sm sm:text-base">
-                    Только начала работу над новым дизайном лендинга!
+                    Команда, начинаем совещание через 5 минут!
                   </div>
 
                   {/* Демо Rich Presence */}
@@ -306,9 +306,9 @@ const Index = () => {
 
                           {/* Детали активности */}
                           <div className="flex-1 min-w-0">
-                            <div className="text-white font-semibold text-xs sm:text-sm mb-1">Дискордик</div>
-                            <div className="text-[#dcddde] text-xs sm:text-sm mb-1">Работаю над логотипом</div>
-                            <div className="text-[#b9bbbe] text-xs sm:text-sm mb-2">Figma Desktop</div>
+                            <div className="text-white font-semibold text-xs sm:text-sm mb-1">TeamChat</div>
+                            <div className="text-[#dcddde] text-xs sm:text-sm mb-1">На совещании</div>
+                            <div className="text-[#b9bbbe] text-xs sm:text-sm mb-2">TeamChat Desktop</div>
                             <div className="flex items-center gap-2">
                               <div className="w-2 h-2 bg-[#3ba55c] rounded-full animate-pulse"></div>
                               <span className="text-[#3ba55c] text-xs font-medium">0:37 прошло</span>
@@ -332,7 +332,7 @@ const Index = () => {
                     <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 12:08</span>
                   </div>
                   <div className="text-[#dcddde] text-sm sm:text-base">
-                    Обожаю видеть прогресс всех! Дискордик делает общение таким удобным
+                    Отлично, что можем общаться в одном месте! TeamChat значительно упростил коммуникацию
                   </div>
                 </div>
               </div>
@@ -341,7 +341,7 @@ const Index = () => {
               <div className="bg-[#2f3136] border border-[#202225] rounded-lg p-4 sm:p-6 mt-6 sm:mt-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-2">
                   <Download className="w-5 h-5 sm:w-6 sm:h-6 text-[#5865f2]" />
-                  Начни работу с Дискордик
+                  Начните работу с TeamChat
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
@@ -349,64 +349,64 @@ const Index = () => {
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#5865f2] rounded-full flex items-center justify-center mx-auto mb-3">
                       <span className="text-white font-bold text-sm sm:text-base">1</span>
                     </div>
-                    <h3 className="text-white font-medium mb-2 text-sm sm:text-base">Скачай приложение</h3>
-                    <p className="text-[#b9bbbe] text-xs sm:text-sm">Получи Дискордик для Windows, macOS или Linux</p>
+                    <h3 className="text-white font-medium mb-2 text-sm sm:text-base">Зарегистрируйтесь</h3>
+                    <p className="text-[#b9bbbe] text-xs sm:text-sm">Создайте рабочее пространство для команды</p>
                   </div>
                   <div className="text-center">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#5865f2] rounded-full flex items-center justify-center mx-auto mb-3">
                       <span className="text-white font-bold text-sm sm:text-base">2</span>
                     </div>
-                    <h3 className="text-white font-medium mb-2 text-sm sm:text-base">Авторизуй Discord</h3>
-                    <p className="text-[#b9bbbe] text-xs sm:text-sm">Подключись безопасно через OAuth</p>
+                    <h3 className="text-white font-medium mb-2 text-sm sm:text-base">Пригласите команду</h3>
+                    <p className="text-[#b9bbbe] text-xs sm:text-sm">Добавьте сотрудников по email</p>
                   </div>
                   <div className="text-center">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#5865f2] rounded-full flex items-center justify-center mx-auto mb-3">
                       <span className="text-white font-bold text-sm sm:text-base">3</span>
                     </div>
-                    <h3 className="text-white font-medium mb-2 text-sm sm:text-base">Начни дизайнить</h3>
-                    <p className="text-[#b9bbbe] text-xs sm:text-sm">Открой Figma и смотри как работает магия</p>
+                    <h3 className="text-white font-medium mb-2 text-sm sm:text-base">Начните общаться</h3>
+                    <p className="text-[#b9bbbe] text-xs sm:text-sm">Всё готово для эффективной работы</p>
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button className="bg-[#5865f2] hover:bg-[#4752c4] text-white px-6 sm:px-8 py-2 sm:py-3 rounded text-sm font-medium">
                     <Download className="w-4 h-4 mr-2" />
-                    Скачать Дискордик
+                    Попробовать бесплатно
                   </Button>
                   <Button
                     variant="outline"
                     className="border-[#4f545c] text-[#b9bbbe] hover:bg-[#40444b] hover:border-[#6d6f78] px-6 sm:px-8 py-2 sm:py-3 rounded text-sm font-medium bg-transparent"
                   >
                     <Shield className="w-4 h-4 mr-2" />
-                    Авторизовать Discord
+                    Связаться с отделом продаж
                   </Button>
                 </div>
               </div>
 
               {/* Преимущества */}
               <div className="bg-[#2f3136] border border-[#202225] rounded-lg p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-4">Почему Дискордик?</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-4">Почему TeamChat?</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   {[
                     {
                       icon: <Zap className="w-4 h-4 sm:w-5 sm:h-5" />,
-                      title: "Автоопределение",
-                      desc: "Работает с приложением и браузером",
+                      title: "Быстрый старт",
+                      desc: "Запуск за 1 день без IT-отдела",
                     },
                     {
                       icon: <Eye className="w-4 h-4 sm:w-5 sm:h-5" />,
-                      title: "Умное отслеживание",
-                      desc: "Показывает имена проектов и статус",
+                      title: "Прозрачная аналитика",
+                      desc: "Отслеживайте активность команды",
                     },
                     {
                       icon: <Clock className="w-4 h-4 sm:w-5 sm:h-5" />,
-                      title: "Обновление в реальном времени",
-                      desc: "Синхронизация каждые 5 секунд",
+                      title: "Работа 24/7",
+                      desc: "Доступность 99.9% по SLA",
                     },
                     {
                       icon: <Shield className="w-4 h-4 sm:w-5 sm:h-5" />,
-                      title: "Приватность прежде всего",
-                      desc: "Никакого сбора данных",
+                      title: "Полная безопасность",
+                      desc: "Шифрование всех данных",
                     },
                   ].map((feature, index) => (
                     <div
@@ -427,7 +427,7 @@ const Index = () => {
             {/* Поле ввода сообщения */}
             <div className="p-2 sm:p-4">
               <div className="bg-[#40444b] rounded-lg px-3 sm:px-4 py-2 sm:py-3">
-                <div className="text-[#72767d] text-xs sm:text-sm">Сообщение #витрина</div>
+                <div className="text-[#72767d] text-xs sm:text-sm">Сообщение #проекты</div>
               </div>
             </div>
           </div>
@@ -439,13 +439,13 @@ const Index = () => {
               <div className="space-y-2">
                 {[
                   {
-                    name: "Мария Дизайнер",
-                    status: "Работает в Figma",
+                    name: "Мария Иванова",
+                    status: "На совещании",
                     avatar: "М",
                     color: "from-purple-500 to-pink-500",
                   },
-                  { name: "Иван UX", status: "В сети", avatar: "И", color: "from-green-500 to-blue-500" },
-                  { name: "Алексей", status: "Разрабатывает Дискордик", avatar: "А", color: "from-blue-500 to-purple-500" },
+                  { name: "Иван Петров", status: "Работает над проектом", avatar: "И", color: "from-green-500 to-blue-500" },
+                  { name: "Алексей Сидоров", status: "Отлучился", avatar: "А", color: "from-blue-500 to-purple-500" },
                 ].map((user, index) => (
                   <div key={index} className="flex items-center gap-3 p-2 rounded hover:bg-[#36393f] cursor-pointer">
                     <div
