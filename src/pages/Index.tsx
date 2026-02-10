@@ -221,7 +221,7 @@ const Index = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-white font-medium text-sm sm:text-base">Мария Дизайнер</span>
+                    <span className="text-white font-medium text-sm sm:text-base">Мария Проджект</span>
                     <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 12:05</span>
                   </div>
                   <div className="text-[#dcddde] mb-3 text-sm sm:text-base">
